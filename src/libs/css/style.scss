@@ -1,0 +1,105 @@
+@import "../../Fonts/Uicon_FontFace/uicons.css";
+
+$base-color: #006298;
+
+body{
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+}
+
+
+header{
+  background: $base-color;
+}
+
+.sidbar{
+  box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.24);
+  min-height: 100vh;
+  width: 160px;
+}
+
+
+.screen-darken{
+  content: ''; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+  pointer-events: none;
+  z-index:10; opacity:1; 
+  visibility:visible;
+  position: absolute;
+}
+
+.navbar{
+  position: relative;
+  z-index: 15;
+  .nav-link{
+    color: #909090;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .nav-link:focus, .nav-link:hover ,.nav-item.active a{
+    border-left: 4px solid $base-color;
+    background: rgba(0, 0, 0, 0.16);
+    padding-left: 4px;
+    color: $base-color;
+  }
+  .dropdown-menu{
+    position: fixed !important;
+    top: 0;
+    left: 150px;
+    height: 100%;
+    background: #006298;
+    z-index:55555;
+    width: 500px;
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+.slider{
+  .carousel-caption{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+
+  }
+
+  .carousel-item.active,
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+  }
+
+  .active.carousel-item-left,
+  .active.carousel-item-right {
+    opacity: 0;
+  }
+
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active,
+  .active.carousel-item-left,
+  .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-item {
+    position: relative;
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-property: opacity;
+    height: 100vh;
+  }
+
+}
