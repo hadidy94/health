@@ -2,104 +2,133 @@
 
 $base-color: #006298;
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   overflow-y: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: $base-color;
+}
 
-header{
+
+header {
   background: $base-color;
 }
 
-.sidbar{
+.sidbar {
   box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.24);
   min-height: 100vh;
   width: 160px;
 }
 
 
-.screen-darken{
-  content: ''; 
+.screen-darken {
+  content: '';
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, .5);
   pointer-events: none;
-  z-index:10; opacity:1; 
-  visibility:visible;
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
   position: absolute;
 }
 
-.navbar{
+.navbar {
   position: relative;
   z-index: 15;
-  .nav-link{
+
+  .nav-link {
     color: #909090;
     padding-top: 15px;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
   }
 
   .dropdown-toggle::after {
     display: none;
   }
 
-  .nav-link:focus, .nav-link:hover ,.nav-item.active a{
+  .nav-link:focus,
+  .nav-link:hover,
+  .nav-item.active a {
     border-left: 4px solid $base-color;
     background: rgba(0, 0, 0, 0.16);
     padding-left: 4px;
     color: $base-color;
   }
-  .dropdown-menu{
+
+  .dropdown-menu {
     position: fixed !important;
     top: 0;
-    left: 150px;
+    left: 147px;
     height: 100%;
     background: #006298;
-    z-index:55555;
-    width: 500px;
+    z-index: 55555;
+    width: 350px;
     border-radius: 0;
     margin: 0;
+    a{
+      color: #e9ecef;
+      border-bottom: 1px dashed #e9ecef;
+      padding-top: 10px;
+    padding-bottom: 10px;
+      &:hover{
+color: #333;
+      }
+    }
   }
 }
 
-.slider{
-  .carousel-caption{
+.slider {
+
+  .carousel-caption {
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.5);
-
+    background-color: rgba(0, 0, 0, .5);
   }
 
-  .carousel-item.active,
-  .carousel-item-next.carousel-item-left,
-  .carousel-item-prev.carousel-item-right {
-    opacity: 1;
+  .carousel-indicators {
+    justify-content: flex-start;
+    bottom: 1.3rem;
   }
 
-  .active.carousel-item-left,
-  .active.carousel-item-right {
-    opacity: 0;
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: auto;
+    left: 15% !important;
+    bottom: 2rem;
+    top: auto;
+  }
+  .carousel-control-prev{
+    left: calc(15% - 40px) !important;
+  }
+  .carousel-control-next{
+    left: calc(15% + 80px) !important;
   }
 
-  .carousel-item-next,
-  .carousel-item-prev,
-  .carousel-item.active,
-  .active.carousel-item-left,
-  .active.carousel-item-prev {
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
-  }
+  .props {
+    .props-box {
+      color: #006298;
+      transition: 0.3s;
+      margin-bottom: 30px;
 
-  .carousel-item {
-    position: relative;
-    opacity: 0;
-    transition-duration: 0.7s;
-    transition-property: opacity;
-    height: 100vh;
+      &:hover {
+        background: $base-color  !important;
+        color: #fff;
+
+        svg path {
+
+          fill: #fff !important;
+        }
+      }
+    }
+
   }
 
 }

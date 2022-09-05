@@ -4,6 +4,11 @@ body {
   overflow-y: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: #006298;
+}
+
 header {
   background: #006298;
 }
@@ -40,7 +45,9 @@ header {
 .navbar .dropdown-toggle::after {
   display: none;
 }
-.navbar .nav-link:focus, .navbar .nav-link:hover, .navbar .nav-item.active a {
+.navbar .nav-link:focus,
+.navbar .nav-link:hover,
+.navbar .nav-item.active a {
   border-left: 4px solid #006298;
   background: rgba(0, 0, 0, 0.16);
   padding-left: 4px;
@@ -49,13 +56,22 @@ header {
 .navbar .dropdown-menu {
   position: fixed !important;
   top: 0;
-  left: 150px;
+  left: 147px;
   height: 100%;
   background: #006298;
   z-index: 55555;
-  width: 500px;
+  width: 350px;
   border-radius: 0;
   margin: 0;
+}
+.navbar .dropdown-menu a {
+  color: #e9ecef;
+  border-bottom: 1px dashed #e9ecef;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar .dropdown-menu a:hover {
+  color: #333;
 }
 
 .slider .carousel-caption {
@@ -65,29 +81,34 @@ header {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.slider .carousel-item.active,
-.slider .carousel-item-next.carousel-item-left,
-.slider .carousel-item-prev.carousel-item-right {
-  opacity: 1;
+.slider .carousel-indicators {
+  justify-content: flex-start;
+  bottom: 1.3rem;
 }
-.slider .active.carousel-item-left,
-.slider .active.carousel-item-right {
-  opacity: 0;
+.slider .carousel-control-next,
+.slider .carousel-control-prev {
+  width: auto;
+  left: 15% !important;
+  bottom: 2rem;
+  top: auto;
 }
-.slider .carousel-item-next,
-.slider .carousel-item-prev,
-.slider .carousel-item.active,
-.slider .active.carousel-item-left,
-.slider .active.carousel-item-prev {
-  transform: translateX(0);
-  transform: translate3d(0, 0, 0);
+.slider .carousel-control-prev {
+  left: calc(15% - 40px) !important;
 }
-.slider .carousel-item {
-  position: relative;
-  opacity: 0;
-  transition-duration: 0.7s;
-  transition-property: opacity;
-  height: 100vh;
+.slider .carousel-control-next {
+  left: calc(15% + 80px) !important;
+}
+.slider .props .props-box {
+  color: #006298;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+.slider .props .props-box:hover {
+  background: #006298 !important;
+  color: #fff;
+}
+.slider .props .props-box:hover svg path {
+  fill: #fff !important;
 }
 
 /*# sourceMappingURL=style.css.map */
