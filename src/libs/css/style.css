@@ -2,11 +2,20 @@
 body {
   font-family: "Roboto", sans-serif;
   overflow-y: hidden;
+  background-color: #F3F3F3;
 }
 
 a {
   text-decoration: none;
   color: #006298;
+}
+
+.main-text {
+  color: #006298;
+}
+
+.main-bg {
+  background: #006298;
 }
 
 header {
@@ -17,6 +26,7 @@ header {
   box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.24);
   min-height: 100vh;
   width: 160px;
+  background: #fff;
 }
 
 .screen-darken {
@@ -47,7 +57,7 @@ header {
 }
 .navbar .nav-link:focus,
 .navbar .nav-link:hover,
-.navbar .nav-item.active a {
+.navbar .nav-item.active .nav-link {
   border-left: 4px solid #006298;
   background: rgba(0, 0, 0, 0.16);
   padding-left: 4px;
@@ -63,12 +73,13 @@ header {
   width: 350px;
   border-radius: 0;
   margin: 0;
+  margin-top: 0;
 }
 .navbar .dropdown-menu a {
   color: #e9ecef;
   border-bottom: 1px dashed #e9ecef;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .navbar .dropdown-menu a:hover {
   color: #333;
@@ -109,6 +120,38 @@ header {
 }
 .slider .props .props-box:hover svg path {
   fill: #fff !important;
+}
+
+.service-cont {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.tabs-cont .nav-tabs .nav-item.show .nav-link, .tabs-cont .nav-tabs .nav-link.active {
+  border: none;
+  background: #006298 !important;
+  color: #fff !important;
+}
+.tabs-cont .nav-tabs .nav-item.show .nav-link span:last-child, .tabs-cont .nav-tabs .nav-link.active span:last-child {
+  color: #eee;
+}
+.tabs-cont .nav-tabs {
+  display: flex;
+  align-items: stretch;
+}
+.tabs-cont .nav-tabs button {
+  width: 150px;
+  height: 85px;
+  background: #fff;
+  padding: 7px;
+  color: #495057;
+  border-radius: 0.25rem;
+}
+.tabs-cont .nav-tabs button span:last-child {
+  color: #909090;
+  margin-top: 5px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
