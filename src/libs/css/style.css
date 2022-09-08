@@ -19,14 +19,37 @@ a {
 }
 
 header {
-  background: #006298;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 333;
+}
+header .btn-login a {
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  height: 100%;
+  display: block;
+}
+header .btn-login a:hover {
+  background: #2489c1;
 }
 
 .sidbar {
   box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.24);
   min-height: 100vh;
-  width: 160px;
+  width: 100px;
   background: #fff;
+  padding-top: 100px !important;
+}
+
+#main-cont {
+  width: calc(100% - 100px);
+}
+#main-cont .slider {
+  height: 100%;
 }
 
 .screen-darken {
@@ -49,8 +72,8 @@ header {
 }
 .navbar .nav-link {
   color: #909090;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .navbar .dropdown-toggle::after {
   display: none;
@@ -66,7 +89,7 @@ header {
 .navbar .dropdown-menu {
   position: fixed !important;
   top: 0;
-  left: 147px;
+  left: 100px;
   height: 100%;
   background: #006298;
   z-index: 55555;
@@ -78,8 +101,8 @@ header {
 .navbar .dropdown-menu a {
   color: #e9ecef;
   border-bottom: 1px dashed #e9ecef;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .navbar .dropdown-menu a:hover {
   color: #333;
@@ -102,12 +125,15 @@ header {
   left: 15% !important;
   bottom: 2rem;
   top: auto;
+  background: #006298;
+  padding: 5px;
+  z-index: 4444;
 }
 .slider .carousel-control-prev {
-  left: calc(15% - 40px) !important;
+  left: calc(15% - 50px) !important;
 }
 .slider .carousel-control-next {
-  left: calc(15% + 80px) !important;
+  left: calc(15% + 90px) !important;
 }
 .slider .props .props-box {
   color: #006298;
