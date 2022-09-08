@@ -96,11 +96,12 @@ header .btn-login a:hover {
   left: 110px;
   height: 100%;
   background: #006298;
-  z-index: 55555;
+  z-index: 55555555;
   width: 350px;
   border-radius: 0;
   margin: 0;
   margin-top: 0;
+  padding-top: 85px;
 }
 .navbar .dropdown-menu a {
   color: #e9ecef;
@@ -135,7 +136,7 @@ header .btn-login a:hover {
   top: auto;
   background: #006298;
   padding: 5px;
-  z-index: 4444;
+  z-index: 44;
 }
 .slider .carousel-control-prev {
   left: calc(15% - 50px) !important;
