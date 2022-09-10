@@ -173,7 +173,8 @@ header {
       color: #006298;
       transition: 0.3s;
       margin-bottom: 30px;
-      img{
+
+      img {
         margin-bottom: 10px;
       }
 
@@ -228,6 +229,35 @@ header {
         margin-top: 5px;
         display: block;
       }
+    }
+  }
+
+}
+
+.set-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+  transition: .3s;
+
+  h5 {
+    color: #333;
+  }
+
+  p {
+    color: #8B8B8B;
+  }
+
+  &:hover{
+    background: $base-color;
+    h5 {
+      color: #fff;
+    }
+    p{
+      color: #eee;
     }
   }
 

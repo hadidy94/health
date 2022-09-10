@@ -50,21 +50,38 @@
 </head>
 
 <body>
-  <div class="container-fluid p-0">
-    <div class="d-flex align-self-stretch">
-      <div class="sidbar py-4">
-        <div class="logo text-center mb-4">
+  <header>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo py-2 text-center d-flex align-items-center">
           <a href="#">
             <img src="./src/images/logo.svg" width="65" height="55">
           </a>
+          <p class="main-text mb-0 ms-3">EA website for Saudi Commission for Health Specialties</p>
         </div>
+
+        <div class="btn-login">
+          <a href="#">
+            <!-- <i class="fa fa-lock" aria-hidden="true"></i> -->
+            <img class="me-1" src="./src/images/icons/Login.png" width="30" height="30">
+            Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid p-0">
+    <div class="d-flex align-self-stretch">
+
+       <div class="sidbar py-4">
         <div class="main_menu">
           <nav class="navbar navbar-expand-lg ">
             <div class="w-100" id="main_nav">
               <ul class="navbar-nav flex-column w-100 text-center">
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link" href="index.html">
-                    <i class="fa fa-home fa-lg d-block"></i>
+                    <img src="./src/images/icons/home.png" width="30" height="30">
                     Home
                   </a>
                 </li>
@@ -72,11 +89,11 @@
 
                 <li class="nav-item dropdown">
                   <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                    <i class="fa fa-list fa-lg d-block"></i>
+                    <img src="./src/images/icons/Summary.png" width="30" height="30">
                     Summery
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"> Executive Summary</a></li>
+                    <li><a class="dropdown-item" href="./executive-summary.html"> Executive Summary</a></li>
                     <li><a class="dropdown-item" href="#"> Academic Affairs</a></li>
                     <li><a class="dropdown-item" href="#"> Profissional Practice Affairs</a></li>
                     <li><a class="dropdown-item" href="#">Health Acadamy </a></li>
@@ -85,16 +102,46 @@
                     <li><a class="dropdown-item" href="#">Shared Services </a></li>
                   </ul>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="about.html">
-                    <i class="fa fa-info-circle fa-lg d-block"></i>
-                    About
+                    <img src="./src/images/icons/About.png" width="30" height="30">
+                    <span>
+                      About
+                    </span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <i class="fa fa-pie-chart fa-lg d-block"></i>
+                    <img src="./src/images/icons/swot.png" width="30" height="30">
                     SWOT
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="./src/images/icons/benchmarking.png" width="30" height="30">
+                    Benchmarking
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="./src/images/icons/requirement-1.png" width="30" height="30">
+                    Requirement
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="./src/images/icons/Risk.png" width="30" height="30">
+                    Risk
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <img src="./src/images/icons/repository.png" width="30" height="30">
+                    EA Repository
                   </a>
                 </li>
 
@@ -105,9 +152,9 @@
 
       </div>
 
-      <div id="main-cont" class="position-relative flex-grow-1 w-100">
-        <div class="p-5">
-            <h3 class="mb-4">About EA</h3>
+      <div id="main-cont" class="position-relative">
+        <div class="p-5 mt-5">
+            <h3 class="mb-4 mt-4">About EA</h3>
             <div class="bg-white px-4 py-5 mb-5">
                 <div class="row">
                     <div class="col-md-6">

@@ -194,4 +194,29 @@ header .btn-login a:hover {
   display: block;
 }
 
+.set-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.set-card h5 {
+  color: #333;
+}
+.set-card p {
+  color: #8B8B8B;
+}
+.set-card:hover {
+  background: #006298;
+}
+.set-card:hover h5 {
+  color: #fff;
+}
+.set-card:hover p {
+  color: #eee;
+}
+
 /*# sourceMappingURL=style.css.map */
