@@ -31,30 +31,38 @@ header {
   top: 0;
   right: 0;
   z-index: 333;
+  background: rgb(214, 214, 214);
 
   .btn-login {
     a {
-      color: #333;
-      padding: 15px 25px;
+      color: #fff;
+      padding: 8px 15px;
       border-radius: 4px;
       height: 100%;
       display: block;
-      background: #e6d4d4;
+      background: #2489c1;
+      img {
+        filter: brightness(0) invert(1);
+        width: 25px;
+        height: 23px;
+      }
 
       &:hover {
-        background: #2489c1;
+        background: #347da6;
         color: #fff;
       }
     }
   }
 }
 
+
+
 .sidbar {
   box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.24);
   min-height: 100vh;
   width: 110px;
   background: #fff;
-  padding-top: 80px !important;
+  padding-top: 52px !important;
 }
 
 
@@ -83,8 +91,8 @@ header {
 
   .nav-link {
     color: #909090;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -158,6 +166,8 @@ header {
     background: $base-color;
     padding: 5px;
     z-index: 44;
+    width: 30px;
+    height: 30px;
   }
 
   .carousel-control-prev {
@@ -172,7 +182,11 @@ header {
     .props-box {
       color: #006298;
       transition: 0.3s;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      min-height: 105px;
+      h5 {
+        font-size: 1rem;
+      }
 
       img {
         margin-bottom: 10px;
@@ -261,4 +275,64 @@ header {
     }
   }
 
+}
+
+.swot-table {
+  thead{
+    background: $base-color;
+    color: #fff;
+  }
+}
+
+.PDF_Download {
+  width: 100%;
+min-height: 55px;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+padding: 10px 55px 10px 55px;
+position: relative;
+-webkit-box-shadow: 0px 0px 0px 1px $base-color;
+-moz-box-shadow: 0px 0px 0px 1px $base-color;
+box-shadow: 0px 0px 0px 1px $base-color;
+}
+.PDF_Download .pdf-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -17px;
+}
+.PDF_Download h1 {
+  font-size: 1em;
+  color: $base-color;
+  margin: 0px;
+  margin-top: 5px;
+
+}
+.PDF_Download p {
+  width: 100%;
+  font-size: 0.75em;
+  color: $base-color;
+  margin: 0px;
+}
+.PDF_Download a {
+  width: 55px;
+  height: 100%;
+  background: $base-color;
+  padding: 14px 14px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  text-indent: -120px;
+  color: #fff;
+}
+.PDF_Download a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
 }

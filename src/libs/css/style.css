@@ -25,17 +25,23 @@ header {
   top: 0;
   right: 0;
   z-index: 333;
+  background: rgb(214, 214, 214);
 }
 header .btn-login a {
-  color: #333;
-  padding: 15px 25px;
+  color: #fff;
+  padding: 8px 15px;
   border-radius: 4px;
   height: 100%;
   display: block;
-  background: #e6d4d4;
+  background: #2489c1;
+}
+header .btn-login a img {
+  filter: brightness(0) invert(1);
+  width: 25px;
+  height: 23px;
 }
 header .btn-login a:hover {
-  background: #2489c1;
+  background: #347da6;
   color: #fff;
 }
 
@@ -44,7 +50,7 @@ header .btn-login a:hover {
   min-height: 100vh;
   width: 110px;
   background: #fff;
-  padding-top: 80px !important;
+  padding-top: 52px !important;
 }
 
 #main-cont {
@@ -71,8 +77,8 @@ header .btn-login a:hover {
 }
 .navbar .nav-link {
   color: #909090;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -137,6 +143,8 @@ header .btn-login a:hover {
   background: #006298;
   padding: 5px;
   z-index: 44;
+  width: 30px;
+  height: 30px;
 }
 .slider .carousel-control-prev {
   left: calc(15% - 50px) !important;
@@ -147,7 +155,11 @@ header .btn-login a:hover {
 .slider .props .props-box {
   color: #006298;
   transition: 0.3s;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  min-height: 105px;
+}
+.slider .props .props-box h5 {
+  font-size: 1rem;
 }
 .slider .props .props-box img {
   margin-bottom: 10px;
@@ -217,6 +229,68 @@ header .btn-login a:hover {
 }
 .set-card:hover p {
   color: #eee;
+}
+
+.swot-table thead {
+  background: #006298;
+  color: #fff;
+}
+
+.PDF_Download {
+  width: 100%;
+  min-height: 55px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 55px 10px 55px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 0px 1px #006298;
+  -moz-box-shadow: 0px 0px 0px 1px #006298;
+  box-shadow: 0px 0px 0px 1px #006298;
+}
+
+.PDF_Download .pdf-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -17px;
+}
+
+.PDF_Download h1 {
+  font-size: 1em;
+  color: #006298;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.PDF_Download p {
+  width: 100%;
+  font-size: 0.75em;
+  color: #006298;
+  margin: 0px;
+}
+
+.PDF_Download a {
+  width: 55px;
+  height: 100%;
+  background: #006298;
+  padding: 14px 14px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  overflow: hidden;
+  text-indent: -120px;
+  color: #fff;
+}
+
+.PDF_Download a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
 }
 
 /*# sourceMappingURL=style.css.map */
