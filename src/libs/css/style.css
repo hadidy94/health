@@ -1,7 +1,6 @@
 @import "../../Fonts/Uicon_FontFace/uicons.css";
 body {
   font-family: "Roboto", sans-serif;
-  overflow-y: hidden;
   background-color: #F3F3F3;
 }
 
@@ -291,6 +290,10 @@ header .btn-login a:hover {
   left: 50%;
   margin-top: -12px;
   margin-left: -12px;
+}
+
+.table-row {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

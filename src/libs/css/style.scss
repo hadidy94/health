@@ -4,7 +4,6 @@ $base-color: #006298;
 
 body {
   font-family: 'Roboto', sans-serif;
-  overflow-y: hidden;
   background-color: #F3F3F3;
 }
 
@@ -335,4 +334,9 @@ box-shadow: 0px 0px 0px 1px $base-color;
   left: 50%;
   margin-top: -12px;
   margin-left: -12px;
+}
+
+
+.table-row{
+  cursor:pointer;
 }
